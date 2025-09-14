@@ -23,7 +23,7 @@ jobs:
       - name: Log in to Docker Hub
         uses: docker/login-action@v3
         with:
-          username: kstrycharz
+          username: kstrycharz07
           password: ${{ secrets.DOCKERHUB_TOKEN }}
 
       # Build and push the image from the repo root (change context/file if needed)
