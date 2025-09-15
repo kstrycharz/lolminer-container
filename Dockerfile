@@ -3,10 +3,10 @@ FROM nvidia/cuda:12.6.2-runtime-ubuntu24.04
 
 ARG DEBIAN_FRONTEND=noninteractive
 # Your preview/beta release details
-ARG LOLMINER_VERSION=1.98_pb
-ARG LOLMINER_BASENAME=lolMiner_v1.98_public_beta_Lin64
+ARG LOLMINER_VERSION=1.98
+ARG LOLMINER_BASENAME=lolMiner_v1.98_Lin64
 ARG LOLMINER_TARBALL=${LOLMINER_BASENAME}.tar.gz
-ARG LOLMINER_URL=https://github.com/Lolliedieb/lolMiner-preview/releases/download/${LOLMINER_VERSION}/${LOLMINER_TARBALL}
+ARG LOLMINER_URL=https://github.com/Lolliedieb/lolMiner-releases/releases/download/${LOLMINER_VERSION}/${LOLMINER_TARBALL}
 
 # Tools + OpenCL ICD
 RUN apt-get update && apt-get install -y --no-install-recommends \
